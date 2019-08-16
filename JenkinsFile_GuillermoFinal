@@ -4,5 +4,5 @@ node{
     bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal")
     path= ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\JenkinsBackup_"+mydate)
     print path
-    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins\\* "+path)
+    bat ("compact C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins\\* "+path)
 }
