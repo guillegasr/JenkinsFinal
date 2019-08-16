@@ -3,7 +3,7 @@ node{
     mydate=new Date().format( 'yyyy-MM-dd_HH-mm-ss' )    
     bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal")
     bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\JenkinsBackup_"+mydate)
-    path=("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\JenkinsBackup_"+mydate)
+    path=("C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\JenkinsBackup_"+mydate)
     print path
     bat ("compact C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins\\* "+path)
 }
