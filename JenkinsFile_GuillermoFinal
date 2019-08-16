@@ -1,0 +1,7 @@
+node{
+    stage "Backup"
+    mydate=new Date().format( 'yyyy-MM-dd_HH-mm-ss' )    
+    print mydate
+    bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal_"+mydate)
+    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins2_"+mydate )
+}
