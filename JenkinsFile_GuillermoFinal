@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+        stages{
+            stage("Backup"){
+                steps{
+                    mydate=new Date().format( 'yyyy-MM-dd_HH-mm-ss' )    
+                    path= ("C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\Jenkins2_"+mydate)
+                    print path
+                    bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal")
+                    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins "+path)
+                }
+            }
+        } 
+}
