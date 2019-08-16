@@ -5,5 +5,5 @@ node{
     bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\JenkinsBackup_"+mydate)
     path=("C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\JenkinsBackup_"+mydate)
     print path
-    bat ("compact C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins\\* "+path)
+    bat ("copy C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins\\* "+path)
 }
