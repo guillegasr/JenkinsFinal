@@ -4,5 +4,5 @@ node{
     path= ("Jenkins2_"+mydate)
     print mydate
     bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal")
-    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\path\\)
+    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\path)
 }
