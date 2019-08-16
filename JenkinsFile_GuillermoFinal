@@ -1,8 +1,8 @@
 node{
     stage "Backup"
     mydate=new Date().format( 'yyyy-MM-dd_HH-mm-ss' )    
-    path= ("Jenkins2_"+mydate)
-    print mydate
+    path= ("C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\Jenkins2_"+mydate)
+    print path
     bat ("md C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal")
-    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\PracticaFinal\\path)
+    powershell ("Compress-Archive C:\\Users\\Academia\\Documents\\DevOps\\Jenkins\\RepoKarla\\Jenkins "+path)
 }
