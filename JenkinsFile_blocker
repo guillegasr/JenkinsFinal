@@ -1,11 +1,10 @@
-
+job('prueba') {
+  blockOn(['.*prueba*']) {
+    blockLevel('GLOBAL')
+    scanQueueFor('ALL')
+} //closing blockOn section
 pipeline{
     agent any
-        blockOn(['.*prueba*']) {
-            blockLevel('GLOBAL')
-            scanQueueFor('ALL')
-        } //closing blockOn section
-        
         stages{
             stage("Build"){
                 steps{
@@ -30,4 +29,5 @@ pipeline{
             }
         }
     
+}
 }
