@@ -1,9 +1,6 @@
-job('prueba') {
-  blockOn(['.*prueba*']) {
-    blockLevel('GLOBAL')
-    scanQueueFor('ALL')
-} //closing blockOn section
+
 pipeline{
+    options { disableConcurrentBuilds() }
     agent any
         stages{
             stage("Build"){
