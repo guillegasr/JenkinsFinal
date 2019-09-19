@@ -1,0 +1,32 @@
+job('prueba') {
+  blockOn(['.*prueba*']) {
+    blockLevel('GLOBAL')
+    scanQueueFor('ALL')
+} //closing blockOn section
+
+pipeline{
+    agent any
+        stages{
+            stage("Build"){
+                steps{
+                    echo "This is the Build step"
+                    bat "PING -n 10 127.0.0.1>nul"
+                }
+            }
+            stage("Test"){
+                steps{
+                    echo "This is the Test step"
+                }
+            }
+            stage("QA"){
+                steps{
+                    echo "This is the QA step"
+                }
+            }
+            stage("Deploy"){
+                steps{
+                    echo "This is the Deploy step"
+                }
+            }
+        }
+}
